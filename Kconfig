@@ -1,0 +1,5 @@
+mainmenu "NRF24L01 Radio sensor"
+
+source "Kconfig.zephyr"
+
+rsource "drivers/nrf24l01/Kconfig"

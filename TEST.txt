@@ -1,0 +1,19 @@
+check our pin are using spi 2 
+
+	/* node '/soc/spi@3ff64000' defined in zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi:418 */
+		spi2: spi@3ff64000 {
+			compatible = "espressif,esp32-spi"; /* in zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi:419 */
+			reg = < 0x3ff64000 0x1000 >;        /* in zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi:420 */
+			interrupts = < 0x1e 0x0 0x0 >;      /* in zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi:421 */
+			interrupt-parent = < &intc >;       /* in zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi:422 */
+			clocks = < &clock 0x7 >;            /* in zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi:423 */
+			dma-clk = < 0x6e >;                 /* in zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi:424 */
+			dma-host = < 0x0 >;                 /* in zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi:425 */
+			#address-cells = < 0x1 >;           /* in ../nrf24l01/app.overlay:17 */
+			#size-cells = < 0x0 >;              /* in ../nrf24l01/app.overlay:18 */
+			status = "okay";                    /* in ../nrf24l01/app.overlay:19 */
+			pinctrl-0 = < &nrf_default >;       /* in ../nrf24l01/app.overlay:20 */
+			pinctrl-names = "default";          /* in ../nrf24l01/app.overlay:21 */
+		};
+
+

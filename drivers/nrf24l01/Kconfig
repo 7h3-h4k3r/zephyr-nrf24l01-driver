@@ -1,0 +1,21 @@
+menuconfig NRF24L01
+    bool "NRF24L01 tx/rx Ratio frequency sensor"
+    default y
+    depends on DT_HAS_ZIQ_NRF24L01_ENABLED
+    select SPI
+    select GPIO
+    help
+      Ebable drivers for the NRF24L01 tx/rx 
+
+if NRF24L01
+config NRF24L01_INIT_PRIORTY
+    int "NRF24L01 initilization priority"
+    default 90
+    help 
+      Device Driver initilization priority
+
+module = NRF24L01
+module-str = NRF24L01
+source "subsys/logging/Kconfig.template.log_config"
+
+endif #NRF24L01

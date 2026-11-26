@@ -1,0 +1,11 @@
+description: NRF24L01 RF
+
+compatible: "ziq,nrf24l01"
+
+include: spi-device.yaml
+
+properties:
+  chip-en-gpios:
+    type: phandle-array
+    required: true
+    description: nrf24l01 Chip enable pin we need gpio pin

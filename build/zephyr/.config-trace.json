@@ -267,55 +267,67 @@
     "CONFIG_INPUT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      31
+    ]
   ],
   [
     "CONFIG_WIFI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      32
+    ]
   ],
   [
     "CONFIG_MAIN_STACK_SIZE",
     "y",
     "int",
     "2048",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/esp32/Kconfig.defconfig",
-      10
+      "/workdir/nrf24l01/build/zephyr/.config",
+      33
     ]
   ],
   [
     "CONFIG_REGULATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      34
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE",
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      502
+      "/workdir/nrf24l01/build/zephyr/.config",
+      35
     ]
   ],
   [
     "CONFIG_FPU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      36
+    ]
   ],
   [
     "CONFIG_GPIO",
@@ -334,8 +346,8 @@
     "y",
     "assign",
     [
-      "/workdir/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu_defconfig",
-      5
+      "/workdir/nrf24l01/build/zephyr/.config",
+      38
     ]
   ],
   [
@@ -352,51 +364,66 @@
     "CONFIG_MIPI_DSI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      40
+    ]
   ],
   [
     "CONFIG_MEMC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      41
+    ]
   ],
   [
     "CONFIG_MODEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      42
+    ]
   ],
   [
     "CONFIG_UART_INTERRUPT_DRIVEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      43
+    ]
   ],
   [
     "CONFIG_GNSS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      44
+    ]
   ],
   [
     "CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC",
     "y",
     "int",
     "240000000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.defconfig",
-      97
+      "/workdir/nrf24l01/build/zephyr/.config",
+      45
     ]
   ],
   [
@@ -404,19 +431,22 @@
     "y",
     "int",
     "1",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/smp/Kconfig",
-      15
+      "/workdir/nrf24l01/build/zephyr/.config",
+      46
     ]
   ],
   [
     "CONFIG_SOC_RESET_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      47
+    ]
   ],
   [
     "CONFIG_CLOCK_CONTROL",
@@ -433,10 +463,10 @@
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      140
+      "/workdir/nrf24l01/build/zephyr/.config",
+      49
     ]
   ],
   [
@@ -444,10 +474,10 @@
     "y",
     "int",
     "2048",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      153
+      "/workdir/nrf24l01/build/zephyr/.config",
+      50
     ]
   ],
   [
@@ -455,10 +485,10 @@
     "y",
     "int",
     "10000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      700
+      "/workdir/nrf24l01/build/zephyr/.config",
+      51
     ]
   ],
   [
@@ -466,10 +496,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      807
+      "/workdir/nrf24l01/build/zephyr/.config",
+      52
     ]
   ],
   [
@@ -477,10 +507,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      165
+      "/workdir/nrf24l01/build/zephyr/.config",
+      53
     ]
   ],
   [
@@ -488,35 +518,44 @@
     "y",
     "string",
     "__start",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      237
+      "/workdir/nrf24l01/build/zephyr/.config",
+      54
     ]
   ],
   [
     "CONFIG_XIP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      55
+    ]
   ],
   [
     "CONFIG_COUNTER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      56
+    ]
   ],
   [
     "CONFIG_SHARED_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      57
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_UF2_FAMILY_ID",
@@ -533,35 +572,44 @@
     "CONFIG_PM_DEVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      59
+    ]
   ],
   [
     "CONFIG_OTP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      60
+    ]
   ],
   [
     "CONFIG_NVMEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      61
+    ]
   ],
   [
     "CONFIG_TICKLESS_KERNEL",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      1045
+      "/workdir/nrf24l01/build/zephyr/.config",
+      62
     ]
   ],
   [
@@ -569,35 +617,44 @@
     "y",
     "int",
     "30",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/clock_control/Kconfig",
-      21
+      "/workdir/nrf24l01/build/zephyr/.config",
+      63
     ]
   ],
   [
     "CONFIG_USE_DT_CODE_PARTITION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      64
+    ]
   ],
   [
     "CONFIG_DYNAMIC_THREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      65
+    ]
   ],
   [
     "CONFIG_MULTI_LEVEL_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      66
+    ]
   ],
   [
     "CONFIG_HARVARD",
@@ -614,55 +671,67 @@
     "CONFIG_PM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      68
+    ]
   ],
   [
     "CONFIG_NUM_METAIRQ_PRIORITIES",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      97
+      "/workdir/nrf24l01/build/zephyr/.config",
+      69
     ]
   ],
   [
     "CONFIG_POWER_DOMAIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      70
+    ]
   ],
   [
     "CONFIG_NUM_PREEMPT_PRIORITIES",
     "y",
     "int",
     "15",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      55
+      "/workdir/nrf24l01/build/zephyr/.config",
+      71
     ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_HEX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      72
+    ]
   ],
   [
     "CONFIG_GEN_IRQ_VECTOR_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      73
+    ]
   ],
   [
     "CONFIG_DYNAMIC_INTERRUPTS",
@@ -679,29 +748,32 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.defconfig",
-      85
+      "/workdir/nrf24l01/build/zephyr/.config",
+      75
     ]
   ],
   [
     "CONFIG_INIT_STACKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      76
+    ]
   ],
   [
     "CONFIG_TIMESLICE_SIZE",
     "y",
     "int",
     "20",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      560
+      "/workdir/nrf24l01/build/zephyr/.config",
+      77
     ]
   ],
   [
@@ -709,10 +781,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      135
+      "/workdir/nrf24l01/build/zephyr/.config",
+      78
     ]
   ],
   [
@@ -720,85 +792,109 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      736
+      "/workdir/nrf24l01/build/zephyr/.config",
+      79
     ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_S19",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      80
+    ]
   ],
   [
     "CONFIG_FLASH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      81
+    ]
   ],
   [
     "CONFIG_CODE_DATA_RELOCATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      82
+    ]
   ],
   [
     "CONFIG_RESET",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      83
+    ]
   ],
   [
     "CONFIG_SYSTEM_TIMER_RESET_BY_LPM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      84
+    ]
   ],
   [
     "CONFIG_WUC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      85
+    ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_HW_CYCLES_PER_SEC_RUNTIME_UPDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      86
+    ]
   ],
   [
     "CONFIG_MFD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      87
+    ]
   ],
   [
     "CONFIG_XTENSA_TIMER",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/timer/Kconfig.xtensa",
-      10
+      "/workdir/nrf24l01/build/zephyr/.config",
+      88
     ]
   ],
   [
@@ -806,19 +902,22 @@
     "y",
     "int",
     "240000000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.defconfig",
-      100
+      "/workdir/nrf24l01/build/zephyr/.config",
+      89
     ]
   ],
   [
     "CONFIG_CACHE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      90
+    ]
   ],
   [
     "CONFIG_LOG",
@@ -827,27 +926,30 @@
     "y",
     "assign",
     [
-      "/workdir/nrf24l01/prj.conf",
-      2
+      "/workdir/nrf24l01/build/zephyr/.config",
+      91
     ]
   ],
   [
     "CONFIG_PM_CPU_OPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      92
+    ]
   ],
   [
     "CONFIG_ARCH_SW_ISR_TABLE_ALIGN",
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/arch/Kconfig",
-      678
+      "/workdir/nrf24l01/build/zephyr/.config",
+      93
     ]
   ],
   [
@@ -855,89 +957,110 @@
     "y",
     "string",
     "",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.misc",
-      124
+      "/workdir/nrf24l01/build/zephyr/.config",
+      94
     ]
   ],
   [
     "CONFIG_ASSERT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      95
+    ]
   ],
   [
     "CONFIG_LOG_PROCESS_THREAD_STACK_SIZE",
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      93
+      "/workdir/nrf24l01/build/zephyr/.config",
+      96
     ]
   ],
   [
     "CONFIG_DEVICE_DEPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      97
+    ]
   ],
   [
     "CONFIG_UART_USE_RUNTIME_CONFIGURE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/serial/Kconfig",
-      59
+      "/workdir/nrf24l01/build/zephyr/.config",
+      98
     ]
   ],
   [
     "CONFIG_PINCTRL_KEEP_SLEEP_STATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      99
+    ]
   ],
   [
     "CONFIG_SYSCON",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      100
+    ]
   ],
   [
     "CONFIG_SOC_EARLY_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      101
+    ]
   ],
   [
     "CONFIG_XTENSA_SMALL_VECTOR_TABLE_ENTRY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      102
+    ]
   ],
   [
     "CONFIG_XTENSA_USE_CORE_CRT1",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      103
+    ]
   ],
   [
     "CONFIG_CONSOLE",
@@ -946,27 +1069,30 @@
     "y",
     "assign",
     [
-      "/workdir/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu_defconfig",
-      4
+      "/workdir/nrf24l01/build/zephyr/.config",
+      104
     ]
   ],
   [
     "CONFIG_WINSTREAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      105
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_MALLOC_ARENA_SIZE",
     "y",
     "int",
     "-1",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/libc/common/Kconfig",
-      64
+      "/workdir/nrf24l01/build/zephyr/.config",
+      106
     ]
   ],
   [
@@ -984,28 +1110,34 @@
     "CONFIG_XTENSA_RESET_VECTOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      108
+    ]
   ],
   [
     "CONFIG_GEN_SW_ISR_TABLE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/arch/Kconfig",
-      640
+      "/workdir/nrf24l01/build/zephyr/.config",
+      109
     ]
   ],
   [
     "CONFIG_REBOOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      110
+    ]
   ],
   [
     "CONFIG_GEN_IRQ_START_VECTOR",
@@ -1033,19 +1165,22 @@
     "CONFIG_SMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      113
+    ]
   ],
   [
     "CONFIG_XTENSA_TIMER_ID",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/timer/Kconfig.xtensa",
-      18
+      "/workdir/nrf24l01/build/zephyr/.config",
+      114
     ]
   ],
   [
@@ -1074,19 +1209,22 @@
     "CONFIG_BOOTLOADER_MCUBOOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      117
+    ]
   ],
   [
     "CONFIG_KERNEL_MEM_POOL",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      642
+      "/workdir/nrf24l01/build/zephyr/.config",
+      118
     ]
   ],
   [
@@ -1104,55 +1242,67 @@
     "CONFIG_OUTPUT_DISASSEMBLY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      120
+    ]
   ],
   [
     "CONFIG_LINKER_USE_RELAX",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      323
+      "/workdir/nrf24l01/build/zephyr/.config",
+      121
     ]
   ],
   [
     "CONFIG_WATCHDOG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      122
+    ]
   ],
   [
     "CONFIG_STATIC_INIT_GNU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      123
+    ]
   ],
   [
     "CONFIG_BUILD_GAP_FILL_PATTERN",
     "y",
     "hex",
     "0xFF",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      779
+      "/workdir/nrf24l01/build/zephyr/.config",
+      124
     ]
   ],
   [
     "CONFIG_BUILD_ONLY_NO_BLOBS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      129
+    ]
   ],
   [
     "CONFIG_TAINT_BLOBS",
@@ -1168,9 +1318,12 @@
     "CONFIG_ACPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      143
+    ]
   ],
   [
     "CONFIG_ZEPHYR_ACPICA_MODULE",
@@ -1209,9 +1362,12 @@
     "CONFIG_CMSIS_DSP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      159
+    ]
   ],
   [
     "CONFIG_ZEPHYR_CMSIS_NN_MODULE",
@@ -3748,19 +3904,22 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/modules/hal/espressif/zephyr/Kconfig",
-      326
+      "/workdir/nrf24l01/build/zephyr/.config",
+      441
     ]
   ],
   [
     "CONFIG_ESP_SLEEP_MSPI_NEED_ALL_IO_PU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      442
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_ESPRESSIF_MODULE",
@@ -3788,9 +3947,12 @@
     "CONFIG_ETHOS_U",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      452
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_ETHOS_U_MODULE",
@@ -3829,9 +3991,12 @@
     "CONFIG_USE_INFINEON_ABSTRACTION_RTOS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      466
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_INTEL_MODULE",
@@ -3892,17 +4057,23 @@
     "CONFIG_NXP_MULTICORE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      489
+    ]
   ],
   [
     "CONFIG_RPMSGLITE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      490
+    ]
   ],
   [
     "CONFIG_ZEPHYR_OPENISA_MODULE",
@@ -3941,9 +4112,12 @@
     "CONFIG_BT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      500
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_RENESAS_MODULE",
@@ -4026,9 +4200,12 @@
     "CONFIG_TDK_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      539
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_TELINK_MODULE",
@@ -4089,9 +4266,12 @@
     "CONFIG_WIFI_NM_WPA_SUPPLICANT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      563
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HOSTAP_MODULE",
@@ -4152,9 +4332,12 @@
     "CONFIG_LIBSBC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      580
+    ]
   ],
   [
     "CONFIG_ZEPHYR_LITTLEFS_MODULE",
@@ -4193,9 +4376,12 @@
     "CONFIG_HAS_SEMTECH_RADIO_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      599
+    ]
   ],
   [
     "CONFIG_ZEPHYR_LVGL_MODULE",
@@ -4245,9 +4431,12 @@
     "CONFIG_PSA_CRYPTO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      614
+    ]
   ],
   [
     "CONFIG_ZEPHYR_MCUBOOT_MODULE",
@@ -4297,9 +4486,12 @@
     "CONFIG_NANOPB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      625
+    ]
   ],
   [
     "CONFIG_ZEPHYR_NRF_WIFI_MODULE",
@@ -4316,9 +4508,12 @@
     "CONFIG_NRF70_BUSLIB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      632
+    ]
   ],
   [
     "CONFIG_ZEPHYR_OPEN_AMP_MODULE",
@@ -4335,9 +4530,12 @@
     "CONFIG_OPENTHREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      640
+    ]
   ],
   [
     "CONFIG_ZEPHYR_OPENTHREAD_MODULE",
@@ -4354,9 +4552,12 @@
     "CONFIG_PERCEPIO_DFM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      651
+    ]
   ],
   [
     "CONFIG_ZEPHYR_PERCEPIO_MODULE",
@@ -4373,9 +4574,12 @@
     "CONFIG_PICOLIBC_MODULE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      658
+    ]
   ],
   [
     "CONFIG_ZEPHYR_PICOLIBC_MODULE",
@@ -4447,9 +4651,12 @@
     "CONFIG_BUILD_WITH_TFA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      677
+    ]
   ],
   [
     "CONFIG_ZEPHYR_TRUSTED_FIRMWARE_M_MODULE",
@@ -4488,9 +4695,12 @@
     "CONFIG_ZCBOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      696
+    ]
   ],
   [
     "CONFIG_ZEPHYR_XENLIB_MODULE",
@@ -4569,11 +4779,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ESP_HAL_LOG_LEVEL",
@@ -4591,83 +4798,110 @@
     "y",
     "int",
     "3",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/modules/Kconfig.esp32",
-      22
+      "/workdir/nrf24l01/build/zephyr/.config",
+      714
     ]
   ],
   [
     "CONFIG_LIBMETAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      715
+    ]
   ],
   [
     "CONFIG_LVGL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      716
+    ]
   ],
   [
     "CONFIG_HAS_MEC_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      717
+    ]
   ],
   [
     "CONFIG_HAS_MPFS_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      718
+    ]
   ],
   [
     "CONFIG_HAS_MEC5_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      719
+    ]
   ],
   [
     "CONFIG_OPENAMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      720
+    ]
   ],
   [
     "CONFIG_MIPI_SYST_LIB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      721
+    ]
   ],
   [
     "CONFIG_HAS_TELINK_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      722
+    ]
   ],
   [
     "CONFIG_MCUBOOT_BOOTUTIL_LIB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      723
+    ]
   ],
   [
     "CONFIG_BOARD",
@@ -4706,9 +4940,12 @@
     "CONFIG_NET_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      737
+    ]
   ],
   [
     "CONFIG_BOARD_ESP32_DEVKITC",
@@ -4852,46 +5089,55 @@
     "CONFIG_HWINFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      760
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_INFO_HEADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      761
+    ]
   ],
   [
     "CONFIG_GPIO_INIT_PRIORITY",
     "y",
     "int",
     "40",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/gpio/Kconfig",
-      50
+      "/workdir/nrf24l01/build/zephyr/.config",
+      762
     ]
   ],
   [
     "CONFIG_ESP32_USE_UNSUPPORTED_REVISION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      763
+    ]
   ],
   [
     "CONFIG_ESP_SIMPLE_BOOT",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig",
-      23
+      "/workdir/nrf24l01/build/zephyr/.config",
+      764
     ]
   ],
   [
@@ -4899,10 +5145,10 @@
     "y",
     "int",
     "1536",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig",
-      32
+      "/workdir/nrf24l01/build/zephyr/.config",
+      765
     ]
   ],
   [
@@ -4910,10 +5156,10 @@
     "y",
     "int",
     "3",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig",
-      41
+      "/workdir/nrf24l01/build/zephyr/.config",
+      766
     ]
   ],
   [
@@ -4964,9 +5210,12 @@
     "CONFIG_ESP32_EFUSE_VIRTUAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      771
+    ]
   ],
   [
     "CONFIG_ESP32_EFUSE_MAX_BLK_LEN",
@@ -4983,9 +5232,12 @@
     "CONFIG_ESP_SPIRAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      773
+    ]
   ],
   [
     "CONFIG_ESPTOOLPY_FLASHMODE_QIO",
@@ -5008,11 +5260,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
-      37
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ESPTOOLPY_FLASHMODE_DOUT",
@@ -5027,11 +5276,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
-      68
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ESPTOOLPY_FLASHMODE",
@@ -5073,11 +5319,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
-      93
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ESPTOOLPY_FLASHFREQ_26M",
@@ -5119,11 +5362,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
-      153
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ESPTOOLPY_FLASHSIZE_4MB",
@@ -5188,20 +5428,20 @@
     "CONFIG_ESPTOOLPY_HEADER_FLASHSIZE_UPDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      796
+    ]
   ],
   [
     "CONFIG_ESPTOOLPY_BEFORE_RESET",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
-      207
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ESPTOOLPY_BEFORE_NORESET",
@@ -5227,11 +5467,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.esptool",
-      230
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ESPTOOLPY_AFTER_NORESET",
@@ -5279,10 +5516,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
-      16
+      "/workdir/nrf24l01/build/zephyr/.config",
+      805
     ]
   ],
   [
@@ -5290,10 +5527,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
-      24
+      "/workdir/nrf24l01/build/zephyr/.config",
+      806
     ]
   ],
   [
@@ -5301,10 +5538,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
-      32
+      "/workdir/nrf24l01/build/zephyr/.config",
+      807
     ]
   ],
   [
@@ -5312,37 +5549,43 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
-      45
+      "/workdir/nrf24l01/build/zephyr/.config",
+      808
     ]
   ],
   [
     "CONFIG_SPI_FLASH_SUPPORT_BOYA_CHIP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      809
+    ]
   ],
   [
     "CONFIG_SPI_FLASH_SUPPORT_TH_CHIP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      810
+    ]
   ],
   [
     "CONFIG_SPI_FLASH_ROM_DRIVER_PATCH",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
-      78
+      "/workdir/nrf24l01/build/zephyr/.config",
+      811
     ]
   ],
   [
@@ -5350,10 +5593,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
-      87
+      "/workdir/nrf24l01/build/zephyr/.config",
+      812
     ]
   ],
   [
@@ -5369,29 +5612,29 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
-      96
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_BOOTLOADER_REGION_PROTECTION_ENABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      815
+    ]
   ],
   [
     "CONFIG_ESP32_SLEEP_WAIT_FLASH_READY_EXTRA_DELAY",
     "y",
     "int",
     "2000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/common/Kconfig.flash",
-      147
+      "/workdir/nrf24l01/build/zephyr/.config",
+      816
     ]
   ],
   [
@@ -5399,10 +5642,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/esp32/Kconfig",
-      25
+      "/workdir/nrf24l01/build/zephyr/.config",
+      817
     ]
   ],
   [
@@ -5410,10 +5653,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/esp32/Kconfig",
-      29
+      "/workdir/nrf24l01/build/zephyr/.config",
+      818
     ]
   ],
   [
@@ -5421,10 +5664,10 @@
     "y",
     "int",
     "2000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/soc/espressif/esp32/Kconfig",
-      37
+      "/workdir/nrf24l01/build/zephyr/.config",
+      819
     ]
   ],
   [
@@ -5512,11 +5755,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/soc/espressif/esp32/Kconfig.mac",
-      8
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ESP32_UNIVERSAL_MAC_ADDRESSES",
@@ -5544,9 +5784,12 @@
     "CONFIG_ESP32_ULP_COPROC_ENABLED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      841
+    ]
   ],
   [
     "CONFIG_SOC_LOG_LEVEL_OFF",
@@ -5593,11 +5836,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SOC_LOG_LEVEL",
@@ -5625,43 +5865,56 @@
     "CONFIG_SIMULATOR_XTENSA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      863
+    ]
   ],
   [
     "CONFIG_XTENSA_ENABLE_BACKTRACE",
     "y",
     "bool",
     "y",
-    "imply",
+    "assign",
     [
-      "SOC_SERIES_ESP32 && SOC_FAMILY_ESPRESSIF_ESP32"
+      "/workdir/nrf24l01/build/zephyr/.config",
+      864
     ]
   ],
   [
     "CONFIG_XTENSA_MORE_SPIN_RELAX_NOPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      865
+    ]
   ],
   [
     "CONFIG_XTENSA_BREAK_ON_UNRECOVERABLE_EXCEPTIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      866
+    ]
   ],
   [
     "CONFIG_XTENSA_INTERRUPT_NONPREEMPTABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      873
+    ]
   ],
   [
     "CONFIG_XTENSA",
@@ -5687,9 +5940,12 @@
     "CONFIG_SEMIHOST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      882
+    ]
   ],
   [
     "CONFIG_ARCH_HAS_WORD_GRANULAR_ACCESS_INSTR_MEM",
@@ -5705,9 +5961,12 @@
     "CONFIG_EXCEPTION_DUMP_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      884
+    ]
   ],
   [
     "CONFIG_ARCH_LOG_LEVEL_OFF",
@@ -5754,11 +6013,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ARCH_LOG_LEVEL",
@@ -5787,10 +6043,10 @@
     "y",
     "int",
     "128",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/arch/Kconfig",
-      271
+      "/workdir/nrf24l01/build/zephyr/.config",
+      893
     ]
   ],
   [
@@ -5798,45 +6054,54 @@
     "y",
     "hex",
     "0x3ffe0000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/arch/Kconfig",
-      280
+      "/workdir/nrf24l01/build/zephyr/.config",
+      894
     ]
   ],
   [
     "CONFIG_NOINIT_SNIPPET_FIRST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      895
+    ]
   ],
   [
     "CONFIG_STACK_GROWS_UP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      896
+    ]
   ],
   [
     "CONFIG_FRAME_POINTER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      897
+    ]
   ],
   [
     "CONFIG_ARCH_DEVICE_STATE_ALIGN",
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/arch/Kconfig",
-      615
+      "/workdir/nrf24l01/build/zephyr/.config",
+      902
     ]
   ],
   [
@@ -5844,11 +6109,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/arch/Kconfig",
-      651
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_GEN_SW_ISR_TABLE_SWITCH",
@@ -5873,19 +6135,22 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/arch/Kconfig",
-      733
+      "/workdir/nrf24l01/build/zephyr/.config",
+      906
     ]
   ],
   [
     "CONFIG_SIMPLIFIED_EXCEPTION_CODES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      907
+    ]
   ],
   [
     "CONFIG_ARCH_HAS_TIMING_FUNCTIONS",
@@ -5991,9 +6256,12 @@
     "CONFIG_CACHE_DOUBLEMAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      935
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS",
@@ -6051,11 +6319,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_KERNEL_LOG_LEVEL",
@@ -6073,10 +6338,10 @@
     "y",
     "int",
     "16",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      30
+      "/workdir/nrf24l01/build/zephyr/.config",
+      950
     ]
   ],
   [
@@ -6084,10 +6349,10 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      73
+      "/workdir/nrf24l01/build/zephyr/.config",
+      951
     ]
   ],
   [
@@ -6117,19 +6382,22 @@
     "y",
     "int",
     "-128",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      86
+      "/workdir/nrf24l01/build/zephyr/.config",
+      954
     ]
   ],
   [
     "CONFIG_SCHED_DEADLINE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      955
+    ]
   ],
   [
     "CONFIG_THREAD_STACK_INFO",
@@ -6145,20 +6413,20 @@
     "CONFIG_THREAD_CUSTOM_DATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      957
+    ]
   ],
   [
     "CONFIG_SCHED_SIMPLE",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      258
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SCHED_SCALABLE",
@@ -6189,96 +6457,117 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      310
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_NONZERO_SPINLOCK_SIZE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      967
+    ]
   ],
   [
     "CONFIG_THREAD_MONITOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      973
+    ]
   ],
   [
     "CONFIG_THREAD_NAME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      974
+    ]
   ],
   [
     "CONFIG_THREAD_RUNTIME_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      975
+    ]
   ],
   [
     "CONFIG_THREAD_RUNTIME_STACK_SAFETY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      976
+    ]
   ],
   [
     "CONFIG_OBJ_CORE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      979
+    ]
   ],
   [
     "CONFIG_WORKQUEUE_WORK_TIMEOUT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      980
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_PRIORITY",
     "y",
     "int",
     "-1",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      508
+      "/workdir/nrf24l01/build/zephyr/.config",
+      985
     ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_NO_YIELD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      986
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_WORK_TIMEOUT_MS",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      526
+      "/workdir/nrf24l01/build/zephyr/.config",
+      987
     ]
   ],
   [
@@ -6286,10 +6575,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      552
+      "/workdir/nrf24l01/build/zephyr/.config",
+      998
     ]
   ],
   [
@@ -6297,89 +6586,110 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      571
+      "/workdir/nrf24l01/build/zephyr/.config",
+      999
     ]
   ],
   [
     "CONFIG_TIMESLICE_PER_THREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1000
+    ]
   ],
   [
     "CONFIG_TIMER_OBSERVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1001
+    ]
   ],
   [
     "CONFIG_POLL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1007
+    ]
   ],
   [
     "CONFIG_MEM_SLAB_POINTER_VALIDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1008
+    ]
   ],
   [
     "CONFIG_MEM_SLAB_TRACE_MAX_UTILIZATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1009
+    ]
   ],
   [
     "CONFIG_NUM_MBOX_ASYNC_MSGS",
     "y",
     "int",
     "10",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      620
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1010
     ]
   ],
   [
     "CONFIG_EVENTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1011
+    ]
   ],
   [
     "CONFIG_HEAP_MEM_POOL_SIZE",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      652
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1012
     ]
   ],
   [
     "CONFIG_HEAP_MEM_POOL_IGNORE_MIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1013
+    ]
   ],
   [
     "CONFIG_TIMEOUT_64BIT",
@@ -6396,11 +6706,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      757
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_TIMEOUT_BACKEND_MINHEAP",
@@ -6431,10 +6738,10 @@
     "y",
     "int",
     "365",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig",
-      840
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1021
     ]
   ],
   [
@@ -6482,35 +6789,44 @@
     "CONFIG_DEVICE_MUTABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1043
+    ]
   ],
   [
     "CONFIG_DEVICE_DT_METADATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1044
+    ]
   ],
   [
     "CONFIG_DEVICE_DEINIT_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1045
+    ]
   ],
   [
     "CONFIG_KERNEL_INIT_PRIORITY_OBJECTS",
     "y",
     "int",
     "30",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig.device",
-      50
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1051
     ]
   ],
   [
@@ -6518,10 +6834,10 @@
     "y",
     "int",
     "35",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig.device",
-      58
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1052
     ]
   ],
   [
@@ -6529,10 +6845,10 @@
     "y",
     "int",
     "40",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig.device",
-      66
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1053
     ]
   ],
   [
@@ -6540,10 +6856,10 @@
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig.device",
-      72
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1054
     ]
   ],
   [
@@ -6551,123 +6867,165 @@
     "y",
     "int",
     "90",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/kernel/Kconfig.device",
-      80
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1055
     ]
   ],
   [
     "CONFIG_SOC_EARLY_RESET_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1071
+    ]
   ],
   [
     "CONFIG_SOC_PREP_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1072
+    ]
   ],
   [
     "CONFIG_SOC_LATE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1073
+    ]
   ],
   [
     "CONFIG_SOC_PER_CORE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1074
+    ]
   ],
   [
     "CONFIG_BOARD_EARLY_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1075
+    ]
   ],
   [
     "CONFIG_BOARD_LATE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1076
+    ]
   ],
   [
     "CONFIG_ADC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1082
+    ]
   ],
   [
     "CONFIG_AUDIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1083
+    ]
   ],
   [
     "CONFIG_AUXDISPLAY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1084
+    ]
   ],
   [
     "CONFIG_BBRAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1085
+    ]
   ],
   [
     "CONFIG_BIOMETRICS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1086
+    ]
   ],
   [
     "CONFIG_BUZZER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1087
+    ]
   ],
   [
     "CONFIG_CAN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1088
+    ]
   ],
   [
     "CONFIG_CHARGER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1089
+    ]
   ],
   [
     "CONFIG_CLOCK_CONTROL_LOG_LEVEL_OFF",
@@ -6714,11 +7072,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CLOCK_CONTROL_LOG_LEVEL",
@@ -6736,10 +7091,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/clock_control/Kconfig.esp32",
-      9
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1097
     ]
   ],
   [
@@ -6747,11 +7102,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/drivers/clock_control/Kconfig.esp32",
-      27
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CLOCK_CONTROL_ESP32_RTC_CLK_SRC_EXT_CRYS",
@@ -6782,45 +7134,54 @@
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/clock_control/Kconfig.esp32",
-      64
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1102
     ]
   ],
   [
     "CONFIG_CLOCK_CONTROL_FIXED_RATE_CLOCK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1103
+    ]
   ],
   [
     "CONFIG_CLOCK_MONITOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1104
+    ]
   ],
   [
     "CONFIG_COMPARATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1105
+    ]
   ],
   [
     "CONFIG_CONSOLE_INPUT_MAX_LINE_LEN",
     "y",
     "int",
     "128",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/console/Kconfig",
-      16
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1106
     ]
   ],
   [
@@ -6837,19 +7198,22 @@
     "CONFIG_CONSOLE_HANDLER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1108
+    ]
   ],
   [
     "CONFIG_CONSOLE_INIT_PRIORITY",
     "y",
     "int",
     "60",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/console/Kconfig",
-      37
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1109
     ]
   ],
   [
@@ -6859,57 +7223,75 @@
     "y",
     "assign",
     [
-      "/workdir/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu_defconfig",
-      6
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1110
     ]
   ],
   [
     "CONFIG_UART_CONSOLE_DEBUG_SERVER_HOOKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1111
+    ]
   ],
   [
     "CONFIG_UART_CONSOLE_MCUMGR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1112
+    ]
   ],
   [
     "CONFIG_RAM_CONSOLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1113
+    ]
   ],
   [
     "CONFIG_IPM_CONSOLE_SENDER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1114
+    ]
   ],
   [
     "CONFIG_IPM_CONSOLE_RECEIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1115
+    ]
   ],
   [
     "CONFIG_UART_MCUMGR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1116
+    ]
   ],
   [
     "CONFIG_UART_CONSOLE_LOG_LEVEL_OFF",
@@ -6956,11 +7338,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_UART_CONSOLE_LOG_LEVEL",
@@ -6977,164 +7356,221 @@
     "CONFIG_EFI_CONSOLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1124
+    ]
   ],
   [
     "CONFIG_COREDUMP_DEVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1125
+    ]
   ],
   [
     "CONFIG_CRC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1126
+    ]
   ],
   [
     "CONFIG_CRYPTO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1127
+    ]
   ],
   [
     "CONFIG_DAC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1128
+    ]
   ],
   [
     "CONFIG_DAI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1129
+    ]
   ],
   [
     "CONFIG_DALI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1130
+    ]
   ],
   [
     "CONFIG_DEBUG_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1131
+    ]
   ],
   [
     "CONFIG_DISK_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1132
+    ]
   ],
   [
     "CONFIG_DISPLAY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1133
+    ]
   ],
   [
     "CONFIG_DMA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1134
+    ]
   ],
   [
     "CONFIG_DP_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1135
+    ]
   ],
   [
     "CONFIG_EDAC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1136
+    ]
   ],
   [
     "CONFIG_EEPROM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1137
+    ]
   ],
   [
     "CONFIG_ENTROPY_GENERATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1138
+    ]
   ],
   [
     "CONFIG_ESPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1139
+    ]
   ],
   [
     "CONFIG_MDIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1140
+    ]
   ],
   [
     "CONFIG_FLASH_FILL_GENERIC_IMPLEMENTATION",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/flash/Kconfig",
-      72
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1147
     ]
   ],
   [
     "CONFIG_FPGA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1148
+    ]
   ],
   [
     "CONFIG_FUEL_GAUGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1149
+    ]
   ],
   [
     "CONFIG_GPIO_LOG_LEVEL_OFF",
@@ -7181,11 +7617,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_GPIO_LOG_LEVEL",
@@ -7202,33 +7635,45 @@
     "CONFIG_GPIO_GET_DIRECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1157
+    ]
   ],
   [
     "CONFIG_GPIO_GET_CONFIG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1158
+    ]
   ],
   [
     "CONFIG_GPIO_HOGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1159
+    ]
   ],
   [
     "CONFIG_GPIO_ENABLE_DISABLE_INTERRUPT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1160
+    ]
   ],
   [
     "CONFIG_GPIO_ESP32",
@@ -7244,51 +7689,66 @@
     "CONFIG_HAPTICS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1162
+    ]
   ],
   [
     "CONFIG_HWSPINLOCK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1163
+    ]
   ],
   [
     "CONFIG_I2C",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1164
+    ]
   ],
   [
     "CONFIG_I2S",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1165
+    ]
   ],
   [
     "CONFIG_I3C",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1166
+    ]
   ],
   [
     "CONFIG_INTC_INIT_PRIORITY",
     "y",
     "int",
     "40",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/interrupt_controller/Kconfig",
-      45
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1171
     ]
   ],
   [
@@ -7336,11 +7796,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_INTC_LOG_LEVEL",
@@ -7358,115 +7815,154 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/interrupt_controller/Kconfig.esp32",
-      8
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1179
     ]
   ],
   [
     "CONFIG_INTC_ESP32_DECISIONS_LOG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1180
+    ]
   ],
   [
     "CONFIG_IPM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1183
+    ]
   ],
   [
     "CONFIG_LED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1184
+    ]
   ],
   [
     "CONFIG_LED_STRIP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1185
+    ]
   ],
   [
     "CONFIG_LORA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1186
+    ]
   ],
   [
     "CONFIG_MBOX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1187
+    ]
   ],
   [
     "CONFIG_MIPI_DBI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1188
+    ]
   ],
   [
     "CONFIG_MM_DRV",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1200
+    ]
   ],
   [
     "CONFIG_MSPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1201
+    ]
   ],
   [
     "CONFIG_OPAMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1202
+    ]
   ],
   [
     "CONFIG_PCIE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1203
+    ]
   ],
   [
     "CONFIG_PCIE_ENDPOINT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1204
+    ]
   ],
   [
     "CONFIG_PECI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1205
+    ]
   ],
   [
     "CONFIG_PINCTRL",
@@ -7523,11 +8019,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_PINCTRL_LOG_LEVEL",
@@ -7544,108 +8037,144 @@
     "CONFIG_PINCTRL_DYNAMIC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1214
+    ]
   ],
   [
     "CONFIG_PINCTRL_ESP32",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/pinctrl/Kconfig.esp32",
-      6
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1215
     ]
   ],
   [
     "CONFIG_PINCTRL_MCHP_COMMON",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1216
+    ]
   ],
   [
     "CONFIG_PINCTRL_NPCX_EX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1217
+    ]
   ],
   [
     "CONFIG_PS2",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1218
+    ]
   ],
   [
     "CONFIG_PSI5",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1219
+    ]
   ],
   [
     "CONFIG_PTP_CLOCK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1220
+    ]
   ],
   [
     "CONFIG_PWM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1221
+    ]
   ],
   [
     "CONFIG_RETAINED_MEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1222
+    ]
   ],
   [
     "CONFIG_RTC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1223
+    ]
   ],
   [
     "CONFIG_SDHC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1224
+    ]
   ],
   [
     "CONFIG_SENSOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1225
+    ]
   ],
   [
     "CONFIG_SENT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1226
+    ]
   ],
   [
     "CONFIG_SERIAL_HAS_DRIVER",
@@ -7672,10 +8201,10 @@
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/serial/Kconfig",
-      36
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1233
     ]
   ],
   [
@@ -7723,11 +8252,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_UART_LOG_LEVEL",
@@ -7744,43 +8270,55 @@
     "CONFIG_UART_LINE_CTRL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1241
+    ]
   ],
   [
     "CONFIG_UART_DRV_CMD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1242
+    ]
   ],
   [
     "CONFIG_UART_WIDE_DATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1243
+    ]
   ],
   [
     "CONFIG_UART_ASYNC_RX_HELPER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1244
+    ]
   ],
   [
     "CONFIG_UART_ESP32",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/serial/Kconfig.esp32",
-      6
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1249
     ]
   ],
   [
@@ -7788,10 +8326,10 @@
     "y",
     "hex",
     "0x1",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/serial/Kconfig.esp32",
-      36
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1250
     ]
   ],
   [
@@ -7799,69 +8337,87 @@
     "y",
     "hex",
     "0x16",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/serial/Kconfig.esp32",
-      44
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1251
     ]
   ],
   [
     "CONFIG_UART_NPCX_FIFO_EX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1252
+    ]
   ],
   [
     "CONFIG_SMBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1253
+    ]
   ],
   [
     "CONFIG_SPI_ASYNC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1254
+    ]
   ],
   [
     "CONFIG_SPI_RTIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1255
+    ]
   ],
   [
     "CONFIG_SPI_SLAVE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1256
+    ]
   ],
   [
     "CONFIG_SPI_EXTENDED_MODES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1257
+    ]
   ],
   [
     "CONFIG_SPI_INIT_PRIORITY",
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/spi/Kconfig",
-      77
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1258
     ]
   ],
   [
@@ -7869,10 +8425,10 @@
     "y",
     "int",
     "200",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/spi/Kconfig",
-      83
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1259
     ]
   ],
   [
@@ -7920,11 +8476,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SPI_LOG_LEVEL",
@@ -7942,69 +8495,87 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/spi/Kconfig.esp32",
-      8
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1267
     ]
   ],
   [
     "CONFIG_SPI_ESP32_INTERRUPT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1268
+    ]
   ],
   [
     "CONFIG_ESP32_SPI_TARGET",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1269
+    ]
   ],
   [
     "CONFIG_STEPPER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1270
+    ]
   ],
   [
     "CONFIG_TIMEAWARE_GPIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1271
+    ]
   ],
   [
     "CONFIG_TIMER_READS_ITS_FREQUENCY_AT_RUNTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1276
+    ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_SLOPPY_IDLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1277
+    ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_INIT_PRIORITY",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/drivers/timer/Kconfig",
-      55
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1278
     ]
   ],
   [
@@ -8022,147 +8593,195 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/drivers/timer/Kconfig.xtensa",
-      31
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_UAOL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1283
+    ]
   ],
   [
     "CONFIG_USB_BC12",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1284
+    ]
   ],
   [
     "CONFIG_UDC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1285
+    ]
   ],
   [
     "CONFIG_UHC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1286
+    ]
   ],
   [
     "CONFIG_UVB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1287
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1288
+    ]
   ],
   [
     "CONFIG_USBC_TCPC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1295
+    ]
   ],
   [
     "CONFIG_USBC_VBUS_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1296
+    ]
   ],
   [
     "CONFIG_USBC_PPC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1297
+    ]
   ],
   [
     "CONFIG_VIDEO_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1298
+    ]
   ],
   [
     "CONFIG_VIRTIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1299
+    ]
   ],
   [
     "CONFIG_VIRTUALIZATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1300
+    ]
   ],
   [
     "CONFIG_W1",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1301
+    ]
   ],
   [
     "CONFIG_TEE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1302
+    ]
   ],
   [
     "CONFIG_REQUIRES_FULL_LIBC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1305
+    ]
   ],
   [
     "CONFIG_REQUIRES_FLOAT_PRINTF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1306
+    ]
   ],
   [
     "CONFIG_LIBC_ALLOW_LESS_THAN_64BIT_TIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1307
+    ]
   ],
   [
     "CONFIG_FULL_LIBC_SUPPORTED",
@@ -8209,11 +8828,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/lib/libc/Kconfig",
-      81
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_EXTERNAL_LIBC",
@@ -8237,17 +8853,23 @@
     "CONFIG_COMMON_LIBC_ASCTIME_R",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1319
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_CTIME_R",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1320
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_TIME",
@@ -8264,9 +8886,10 @@
     "y",
     "bool",
     "y",
-    "imply",
+    "assign",
     [
-      "PICOLIBC && PICOLIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1322
     ]
   ],
   [
@@ -8274,10 +8897,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/libc/common/Kconfig",
-      88
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1323
     ]
   ],
   [
@@ -8285,29 +8908,32 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/libc/common/Kconfig",
-      97
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1324
     ]
   ],
   [
     "CONFIG_COMMON_LIBC_REMOVE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1325
+    ]
   ],
   [
     "CONFIG_ERRNO",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/libc/common/Kconfig",
-      132
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1326
     ]
   ],
   [
@@ -8323,11 +8949,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/lib/libc/picolibc/Kconfig",
-      8
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_PICOLIBC_IO_FLOAT",
@@ -8342,21 +8965,18 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/lib/libc/picolibc/Kconfig",
-      34
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_STDOUT_CONSOLE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/libc/Kconfig",
-      173
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1331
     ]
   ],
   [
@@ -8374,87 +8994,111 @@
     "CONFIG_CPP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1338
+    ]
   ],
   [
     "CONFIG_SYS_HASH_FUNC32",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1348
+    ]
   ],
   [
     "CONFIG_SYS_HASH_MAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1354
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_VALIDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1360
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_STRESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1361
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1362
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_ALLOC_LOOPS",
     "y",
     "int",
     "3",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/heap/Kconfig",
-      35
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1363
     ]
   ],
   [
     "CONFIG_SYS_HEAP_RUNTIME_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1364
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_ARRAY_SIZE",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/heap/Kconfig",
-      56
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1365
     ]
   ],
   [
     "CONFIG_SYS_HEAP_LISTENER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1366
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_HARDENING_NONE",
@@ -8469,11 +9113,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/lib/heap/Kconfig",
-      83
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SYS_HEAP_HARDENING_MODERATE",
@@ -8514,9 +9155,12 @@
     "CONFIG_SYS_HEAP_KASAN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1373
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_LOG_LEVEL_OFF",
@@ -8563,11 +9207,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SYS_HEAP_LOG_LEVEL",
@@ -8585,11 +9226,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/lib/heap/Kconfig",
-      320
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SYS_HEAP_BIG_ONLY",
@@ -8611,57 +9249,78 @@
     "CONFIG_MULTI_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1384
+    ]
   ],
   [
     "CONFIG_SHARED_MULTI_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1385
+    ]
   ],
   [
     "CONFIG_SYS_MEM_BLOCKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1391
+    ]
   ],
   [
     "CONFIG_MIDI2_UMP_STREAM_RESPONDER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1397
+    ]
   ],
   [
     "CONFIG_NET_BUF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1400
+    ]
   ],
   [
     "CONFIG_ZVFS_OPEN_IGNORE_MIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1405
+    ]
   ],
   [
     "CONFIG_PRINTK_SYNC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1406
+    ]
   ],
   [
     "CONFIG_MPSC_PBUF",
@@ -8677,25 +9336,34 @@
     "CONFIG_SPSC_PBUF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1408
+    ]
   ],
   [
     "CONFIG_MPSC_CLEAR_ALLOCATED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1409
+    ]
   ],
   [
     "CONFIG_RESET_ON_FATAL_ERROR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1410
+    ]
   ],
   [
     "CONFIG_HAS_POWEROFF",
@@ -8711,19 +9379,22 @@
     "CONFIG_POWEROFF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1412
+    ]
   ],
   [
     "CONFIG_BOOT_BANNER",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/os/Kconfig",
-      154
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1413
     ]
   ],
   [
@@ -8731,10 +9402,10 @@
     "y",
     "string",
     "Booting Zephyr OS build",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/os/Kconfig",
-      162
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1414
     ]
   ],
   [
@@ -8742,27 +9413,33 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/os/Kconfig",
-      169
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1415
     ]
   ],
   [
     "CONFIG_BOOT_CLEAR_SCREEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1416
+    ]
   ],
   [
     "CONFIG_BOOTARGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1417
+    ]
   ],
   [
     "CONFIG_ATOMIC_OPERATIONS_BUILTIN",
@@ -8779,11 +9456,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/lib/os/Kconfig.cbprintf",
-      6
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CBPRINTF_NANO",
@@ -8798,11 +9472,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/lib/os/Kconfig.cbprintf",
-      29
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CBPRINTF_REDUCED_INTEGRAL",
@@ -8816,25 +9487,34 @@
     "CONFIG_CBPRINTF_FP_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1429
+    ]
   ],
   [
     "CONFIG_CBPRINTF_FP_A_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1430
+    ]
   ],
   [
     "CONFIG_CBPRINTF_LIBC_SUBSTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1431
+    ]
   ],
   [
     "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL_OFF",
@@ -8881,11 +9561,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL",
@@ -8902,9 +9579,12 @@
     "CONFIG_CBPRINTF_PACKAGE_LONGDOUBLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1439
+    ]
   ],
   [
     "CONFIG_CBPRINTF_CONVERT_CHECK_PTR",
@@ -8921,52 +9601,64 @@
     "CONFIG_ZVFS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1441
+    ]
   ],
   [
     "CONFIG_CPU_LOAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1442
+    ]
   ],
   [
     "CONFIG_CPU_LOAD_METRIC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1443
+    ]
   ],
   [
     "CONFIG_SMF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1446
+    ]
   ],
   [
     "CONFIG_LIBGCC_RTLIB",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/lib/runtime/Kconfig",
-      13
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_JSON_LIBRARY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1452
+    ]
   ],
   [
     "CONFIG_RING_BUFFER",
@@ -8982,49 +9674,67 @@
     "CONFIG_RING_BUFFER_LARGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1454
+    ]
   ],
   [
     "CONFIG_NOTIFY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1455
+    ]
   ],
   [
     "CONFIG_BASE64",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1456
+    ]
   ],
   [
     "CONFIG_ONOFF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1457
+    ]
   ],
   [
     "CONFIG_UTF8",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1458
+    ]
   ],
   [
     "CONFIG_COBS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1459
+    ]
   ],
   [
     "CONFIG_GETOPT",
@@ -9040,28 +9750,34 @@
     "CONFIG_GETOPT_LONG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1461
+    ]
   ],
   [
     "CONFIG_TIMEUTIL_APPLY_SKEW",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/lib/utils/Kconfig",
-      118
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1462
     ]
   ],
   [
     "CONFIG_UUID",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1465
+    ]
   ],
   [
     "CONFIG_WORD_GRANULAR_ACCESS",
@@ -9077,97 +9793,133 @@
     "CONFIG_MIN_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1467
+    ]
   ],
   [
     "CONFIG_FIDO2",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1477
+    ]
   ],
   [
     "CONFIG_CONSOLE_SUBSYS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1485
+    ]
   ],
   [
     "CONFIG_CPU_FREQ",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1486
+    ]
   ],
   [
     "CONFIG_CRC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1487
+    ]
   ],
   [
     "CONFIG_DAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1488
+    ]
   ],
   [
     "CONFIG_THREAD_ANALYZER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1493
+    ]
   ],
   [
     "CONFIG_DEBUG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1499
+    ]
   ],
   [
     "CONFIG_UBSAN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1500
+    ]
   ],
   [
     "CONFIG_STACK_USAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1501
+    ]
   ],
   [
     "CONFIG_CALLGRAPH_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1502
+    ]
   ],
   [
     "CONFIG_STACK_SENTINEL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1503
+    ]
   ],
   [
     "CONFIG_PRINTK",
@@ -9184,248 +9936,329 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/debug/Kconfig",
-      173
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1505
     ]
   ],
   [
     "CONFIG_FORCE_NO_ASSERT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1506
+    ]
   ],
   [
     "CONFIG_ASSERT_VERBOSE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/debug/Kconfig",
-      249
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1507
     ]
   ],
   [
     "CONFIG_ASSERT_NO_FILE_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1508
+    ]
   ],
   [
     "CONFIG_ASSERT_NO_COND_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1509
+    ]
   ],
   [
     "CONFIG_ASSERT_NO_MSG_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1510
+    ]
   ],
   [
     "CONFIG_ASSERT_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1511
+    ]
   ],
   [
     "CONFIG_OVERRIDE_FRAME_POINTER_DEFAULT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1512
+    ]
   ],
   [
     "CONFIG_DEBUG_THREAD_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1513
+    ]
   ],
   [
     "CONFIG_DEBUG_COREDUMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1514
+    ]
   ],
   [
     "CONFIG_SYMTAB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1515
+    ]
   ],
   [
     "CONFIG_GDBSTUB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1518
+    ]
   ],
   [
     "CONFIG_MIPI_STP_DECODER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1519
+    ]
   ],
   [
     "CONFIG_CS_TRACE_DEFMT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1520
+    ]
   ],
   [
     "CONFIG_DISK_ACCESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1521
+    ]
   ],
   [
     "CONFIG_DSP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1522
+    ]
   ],
   [
     "CONFIG_EMUL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1523
+    ]
   ],
   [
     "CONFIG_CHARACTER_FRAMEBUFFER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1524
+    ]
   ],
   [
     "CONFIG_FILE_SYSTEM_LIB_LINK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1529
+    ]
   ],
   [
     "CONFIG_FILE_SYSTEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1530
+    ]
   ],
   [
     "CONFIG_GNSS_RTK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1533
+    ]
   ],
   [
     "CONFIG_INSTRUMENTATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1534
+    ]
   ],
   [
     "CONFIG_RPMSG_SERVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1539
+    ]
   ],
   [
     "CONFIG_IPC_SERVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1540
+    ]
   ],
   [
     "CONFIG_OPENAMP_RSC_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1541
+    ]
   ],
   [
     "CONFIG_JWT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1544
+    ]
   ],
   [
     "CONFIG_ZMS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1549
+    ]
   ],
   [
     "CONFIG_LLEXT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1552
+    ]
   ],
   [
     "CONFIG_LLEXT_EDK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1553
+    ]
   ],
   [
     "CONFIG_LOG_CORE_INIT_PRIORITY",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig",
-      18
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1558
     ]
   ],
   [
@@ -9433,11 +10266,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.mode",
-      9
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LOG_MODE_IMMEDIATE",
@@ -9459,62 +10289,77 @@
     "CONFIG_LOG_FRONTEND",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1562
+    ]
   ],
   [
     "CONFIG_LOG_FRONTEND_OPT_API",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1563
+    ]
   ],
   [
     "CONFIG_LOG_CUSTOM_HEADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1564
+    ]
   ],
   [
     "CONFIG_LOG_MULTIDOMAIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1565
+    ]
   ],
   [
     "CONFIG_LOG_FLUSH_SLEEP_US",
     "y",
     "int",
     "10000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.mode",
-      84
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1566
     ]
   ],
   [
     "CONFIG_LOG_RUNTIME_FILTERING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1571
+    ]
   ],
   [
     "CONFIG_LOG_DEFAULT_LEVEL",
     "y",
     "int",
     "3",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.filtering",
-      39
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1572
     ]
   ],
   [
@@ -9522,10 +10367,10 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.filtering",
-      54
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1573
     ]
   ],
   [
@@ -9533,10 +10378,10 @@
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.filtering",
-      71
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1574
     ]
   ],
   [
@@ -9544,48 +10389,54 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      10
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1580
     ]
   ],
   [
     "CONFIG_LOG_PRINTK_STATIC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1581
+    ]
   ],
   [
     "CONFIG_LOG_MODE_OVERFLOW",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      23
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1582
     ]
   ],
   [
     "CONFIG_LOG_BLOCK_IN_THREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1583
+    ]
   ],
   [
     "CONFIG_LOG_PROCESS_TRIGGER_THRESHOLD",
     "y",
     "int",
     "10",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      48
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1584
     ]
   ],
   [
@@ -9593,10 +10444,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      59
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1585
     ]
   ],
   [
@@ -9604,10 +10455,10 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      70
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1586
     ]
   ],
   [
@@ -9615,29 +10466,32 @@
     "y",
     "int",
     "1000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      77
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1587
     ]
   ],
   [
     "CONFIG_LOG_PROCESS_THREAD_CUSTOM_PRIORITY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1588
+    ]
   ],
   [
     "CONFIG_LOG_BUFFER_SIZE",
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      127
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1589
     ]
   ],
   [
@@ -9645,112 +10499,142 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.processing",
-      156
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1590
     ]
   ],
   [
     "CONFIG_LOG_TIMESTAMP_64BIT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1591
+    ]
   ],
   [
     "CONFIG_LOG_TIMESTAMP_USE_REALTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1592
+    ]
   ],
   [
     "CONFIG_LOG_SPEED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1593
+    ]
   ],
   [
     "CONFIG_LOG_FUNC_NAME_PREFIX_ERR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1603
+    ]
   ],
   [
     "CONFIG_LOG_FUNC_NAME_PREFIX_WRN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1604
+    ]
   ],
   [
     "CONFIG_LOG_FUNC_NAME_PREFIX_INF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1605
+    ]
   ],
   [
     "CONFIG_LOG_FUNC_NAME_PREFIX_DBG",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.formatting",
-      20
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1606
     ]
   ],
   [
     "CONFIG_LOG_MIPI_SYST_ENABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1609
+    ]
   ],
   [
     "CONFIG_LOG_DOMAIN_NAME_PREFIX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1610
+    ]
   ],
   [
     "CONFIG_LOG_THREAD_ID_PREFIX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1611
+    ]
   ],
   [
     "CONFIG_LOG_CUSTOM_FORMAT_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1612
+    ]
   ],
   [
     "CONFIG_LOG_BACKEND_SHOW_TIMESTAMP",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.formatting",
-      150
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1613
     ]
   ],
   [
@@ -9758,10 +10642,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.formatting",
-      156
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1614
     ]
   ],
   [
@@ -9769,37 +10653,43 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.formatting",
-      163
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1615
     ]
   ],
   [
     "CONFIG_LOG_INFO_COLOR_GREEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1616
+    ]
   ],
   [
     "CONFIG_LOG_DBG_COLOR_BLUE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1617
+    ]
   ],
   [
     "CONFIG_LOG_TAG_MAX_LEN",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.formatting",
-      179
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1618
     ]
   ],
   [
@@ -9817,10 +10707,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.formatting",
-      200
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1620
     ]
   ],
   [
@@ -9828,11 +10718,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.formatting",
-      207
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LOG_OUTPUT_FORMAT_DATE_TIMESTAMP",
@@ -9870,35 +10757,44 @@
     "CONFIG_LOG_BACKEND_CRLF_NONE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1626
+    ]
   ],
   [
     "CONFIG_LOG_BACKEND_CRLF_LFONLY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1627
+    ]
   ],
   [
     "CONFIG_LOG_BACKEND_SKIP_SOURCE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1628
+    ]
   ],
   [
     "CONFIG_LOG_BACKEND_UART",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/backends/Kconfig.uart",
-      7
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1634
     ]
   ],
   [
@@ -9906,10 +10802,10 @@
     "y",
     "int",
     "1",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/backends/Kconfig.uart",
-      22
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1635
     ]
   ],
   [
@@ -9917,10 +10813,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/backends/Kconfig.uart",
-      33
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1636
     ]
   ],
   [
@@ -9928,11 +10824,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.template.log_format_config",
-      6
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LOG_BACKEND_UART_OUTPUT_DICTIONARY",
@@ -9965,19 +10858,22 @@
     "CONFIG_LOG_BACKEND_IPC_SERVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1641
+    ]
   ],
   [
     "CONFIG_LOG_USE_VLA",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.misc",
-      21
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1647
     ]
   ],
   [
@@ -9985,53 +10881,65 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.misc",
-      31
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1648
     ]
   ],
   [
     "CONFIG_LOG_ALWAYS_RUNTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1649
+    ]
   ],
   [
     "CONFIG_LOG_FMT_SECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1650
+    ]
   ],
   [
     "CONFIG_LOG_FMT_STRING_VALIDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1651
+    ]
   ],
   [
     "CONFIG_LOG_MEM_UTILIZATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1652
+    ]
   ],
   [
     "CONFIG_LOG_FAILURE_REPORT_PERIOD",
     "y",
     "int",
     "1000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig.misc",
-      115
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1653
     ]
   ],
   [
@@ -10039,10 +10947,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig",
-      54
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1656
     ]
   ],
   [
@@ -10050,10 +10958,10 @@
     "y",
     "int",
     "5000",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/logging/Kconfig",
-      65
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1657
     ]
   ],
   [
@@ -10070,49 +10978,67 @@
     "CONFIG_MEM_ATTR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1661
+    ]
   ],
   [
     "CONFIG_EC_HOST_CMD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1670
+    ]
   ],
   [
     "CONFIG_OSDP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1673
+    ]
   ],
   [
     "CONFIG_MODBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1676
+    ]
   ],
   [
     "CONFIG_MODEM_MODULES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1677
+    ]
   ],
   [
     "CONFIG_NETWORKING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1682
+    ]
   ],
   [
     "CONFIG_HAS_PM",
@@ -10138,33 +11064,45 @@
     "CONFIG_PM_POLICY_LATENCY_STANDALONE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1690
+    ]
   ],
   [
     "CONFIG_MCTP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1696
+    ]
   ],
   [
     "CONFIG_POSIX_SYSTEM_INTERFACES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1706
+    ]
   ],
   [
     "CONFIG_POSIX_API",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1707
+    ]
   ],
   [
     "CONFIG_POSIX_AEP_CHOICE_NONE",
@@ -10179,11 +11117,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/subsys/portability/posix/Kconfig.profile",
-      29
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_POSIX_AEP_CHOICE_BASE",
@@ -10251,35 +11186,44 @@
     "CONFIG_EVENTFD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1724
+    ]
   ],
   [
     "CONFIG_PROFILING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1727
+    ]
   ],
   [
     "CONFIG_TEST_RANDOM_GENERATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1732
+    ]
   ],
   [
     "CONFIG_TIMER_RANDOM_INITIAL_STATE",
     "y",
     "int",
     "123456789",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/random/Kconfig",
-      33
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1733
     ]
   ],
   [
@@ -10297,228 +11241,309 @@
     "CONFIG_CSPRNG_NEEDED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1735
+    ]
   ],
   [
     "CONFIG_RTIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1738
+    ]
   ],
   [
     "CONFIG_MMC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1743
+    ]
   ],
   [
     "CONFIG_SDMMC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1744
+    ]
   ],
   [
     "CONFIG_SDIO_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1745
+    ]
   ],
   [
     "CONFIG_SECURE_STORAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1748
+    ]
   ],
   [
     "CONFIG_SETTINGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1749
+    ]
   ],
   [
     "CONFIG_SHELL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1750
+    ]
   ],
   [
     "CONFIG_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1751
+    ]
   ],
   [
     "CONFIG_STREAM_FLASH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1756
+    ]
   ],
   [
     "CONFIG_TASK_WDT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1759
+    ]
   ],
   [
     "CONFIG_ZTEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1764
+    ]
   ],
   [
     "CONFIG_ZTEST_MOCKING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1765
+    ]
   ],
   [
     "CONFIG_ZTRESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1766
+    ]
   ],
   [
     "CONFIG_ZTEST_BENCHMARK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1771
+    ]
   ],
   [
     "CONFIG_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1774
+    ]
   ],
   [
     "CONFIG_TEST_USERSPACE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1775
+    ]
   ],
   [
     "CONFIG_FORCE_COVERAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1781
+    ]
   ],
   [
     "CONFIG_COVERAGE_DUMP_PATH_EXCLUDE",
     "y",
     "string",
     "",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/subsys/testsuite/Kconfig.coverage",
-      96
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1782
     ]
   ],
   [
     "CONFIG_TIMING_FUNCTIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1785
+    ]
   ],
   [
     "CONFIG_TRACING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1786
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1787
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_STACK_NEXT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1788
+    ]
   ],
   [
     "CONFIG_USB_HOST_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1789
+    ]
   ],
   [
     "CONFIG_USBC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1790
+    ]
   ],
   [
     "CONFIG_VIDEO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1791
+    ]
   ],
   [
     "CONFIG_ZBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1792
+    ]
   ],
   [
     "CONFIG_MODULES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1793
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_ZEPHYR_1_0",
@@ -10577,11 +11602,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      62
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LINKER_ORPHAN_SECTION_ERROR",
@@ -10596,10 +11618,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      148
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1811
     ]
   ],
   [
@@ -10607,10 +11629,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      178
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1812
     ]
   ],
   [
@@ -10629,38 +11651,41 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      193
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_HAVE_CUSTOM_LINKER_SCRIPT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1815
+    ]
   ],
   [
     "CONFIG_LINKER_SORT_BY_ALIGNMENT",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      243
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1816
     ]
   ],
   [
     "CONFIG_LINKER_USE_BOOT_SECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1821
+    ]
   ],
   [
     "CONFIG_LINKER_ITERABLE_SUBALIGN",
@@ -10702,11 +11727,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      390
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_STD_C23",
@@ -10730,36 +11752,42 @@
     "CONFIG_GNU_C_EXTENSIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1836
+    ]
   ],
   [
     "CONFIG_CODING_GUIDELINE_CHECK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1837
+    ]
   ],
   [
     "CONFIG_COMPILER_FREESTANDING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1838
+    ]
   ],
   [
     "CONFIG_SIZE_OPTIMIZATIONS",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      491
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SIZE_OPTIMIZATIONS_AGGRESSIVE",
@@ -10797,35 +11825,44 @@
     "CONFIG_COMPILER_WARNINGS_AS_ERRORS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1844
+    ]
   ],
   [
     "CONFIG_DEPRECATION_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1845
+    ]
   ],
   [
     "CONFIG_COMPILER_SAVE_TEMPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1846
+    ]
   ],
   [
     "CONFIG_COMPILER_TRACK_MACRO_EXPANSION",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      568
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1847
     ]
   ],
   [
@@ -10833,10 +11870,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      576
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1848
     ]
   ],
   [
@@ -10852,11 +11889,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      583
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_FORTIFY_SOURCE_RUN_TIME",
@@ -10870,17 +11904,23 @@
     "CONFIG_COMPILER_OPT",
     "y",
     "string",
-    null,
-    "unset",
-    null
+    "",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1852
+    ]
   ],
   [
     "CONFIG_MISRA_SANE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1853
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_SUPPORTS_VLA_IN_STATEMENTS",
@@ -10908,20 +11948,20 @@
     "CONFIG_SCOPE_CLEANUP_HELPERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1856
+    ]
   ],
   [
     "CONFIG_COMPILER_CODEGEN_VLIW_AUTO",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      655
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_COMPILER_CODEGEN_VLIW_ENABLED",
@@ -10960,21 +12000,18 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      686
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_KERNEL_BIN_NAME",
     "y",
     "string",
     "zephyr",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      710
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1874
     ]
   ],
   [
@@ -10982,152 +12019,197 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      716
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1875
     ]
   ],
   [
     "CONFIG_OUTPUT_SYMBOLS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1876
+    ]
   ],
   [
     "CONFIG_OUTPUT_PRINT_MEMORY_USAGE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      758
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1877
     ]
   ],
   [
     "CONFIG_CLEANUP_INTERMEDIATE_FILES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1878
+    ]
   ],
   [
     "CONFIG_BUILD_NO_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1879
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_HEX_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1880
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_EXE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1881
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_S19_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1882
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_VERILOG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1883
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_UF2",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1884
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_MOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1885
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_STRIPPED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1886
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_COMPRESS_DEBUG_SECTIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1887
+    ]
   ],
   [
     "CONFIG_BUILD_ALIGN_LMA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1888
+    ]
   ],
   [
     "CONFIG_APPLICATION_DEFINED_SYSCALL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1889
+    ]
   ],
   [
     "CONFIG_MAKEFILE_EXPORTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1890
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_META",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1891
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_STRIP_PATHS",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      1014
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1892
     ]
   ],
   [
@@ -11135,38 +12217,44 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      1028
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1893
     ]
   ],
   [
     "CONFIG_EMIT_ALL_SYSCALLS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1894
+    ]
   ],
   [
     "CONFIG_WARN_DEPRECATED",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      1060
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1897
     ]
   ],
   [
     "CONFIG_WARN_EXPERIMENTAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1898
+    ]
   ],
   [
     "CONFIG_TAINT",
@@ -11183,35 +12271,44 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "/workdir/zephyrproject/zephyr/Kconfig.zephyr",
-      1096
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1900
     ]
   ],
   [
     "CONFIG_IS_BOOTLOADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1906
+    ]
   ],
   [
     "CONFIG_BOOTLOADER_BOSSA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1907
+    ]
   ],
   [
     "CONFIG_LEGACY_GENERATED_INCLUDE_PATH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1913
+    ]
   ],
   [
     "CONFIG_NRF24L01",
@@ -11220,8 +12317,8 @@
     "y",
     "assign",
     [
-      "/workdir/nrf24l01/prj.conf",
-      1
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1916
     ]
   ],
   [
@@ -11229,10 +12326,10 @@
     "y",
     "int",
     "90",
-    "default",
+    "assign",
     [
-      "/workdir/nrf24l01/drivers/nrf24l01/Kconfig",
-      13
+      "/workdir/nrf24l01/build/zephyr/.config",
+      1917
     ]
   ],
   [

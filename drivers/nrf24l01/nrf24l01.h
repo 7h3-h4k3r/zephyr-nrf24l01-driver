@@ -46,7 +46,7 @@
 typedef struct{
     struct spi_dt_spec spi;
     struct gpio_dt_spec chipen;
-    struct gpio_dt_spec cs;
+
 }nrf_conf;
 
 

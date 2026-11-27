@@ -8,7 +8,7 @@ menuconfig NRF24L01
       Ebable drivers for the NRF24L01 tx/rx 
 
 if NRF24L01
-config NRF24L01_INIT_PRIORTY
+config NRF24L01_INIT_PRIORITY
     int "NRF24L01 initilization priority"
     default 90
     help 

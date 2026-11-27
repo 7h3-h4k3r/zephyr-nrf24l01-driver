@@ -1188,6 +1188,7 @@
 	9, /* /buttons */ \
 	10, /* /buttons/button_0 */ \
 	49, /* /soc/i2c@3ff53000 */ \
+	110, /* /soc/spi@3ff64000 */ \
 	111, /* /soc/spi@3ff64000/nrf24l01@0 */
 #define DT_N_NODELABEL_DT_N_S_soc_S_gpio_S_gpio_3ff44000_IDX_0_C_TOKEN gpio0
 
@@ -15565,6 +15566,7 @@
 #define DT_N_S_soc_S_spi_3ff64000_REQUIRES_ORDS \
 	5, /* /soc */ \
 	7, /* /soc/interrupt-controller@3ff00104 */ \
+	8, /* /soc/gpio/gpio@3ff44000 */ \
 	24, /* /pin-controller/nrf_default */ \
 	42, /* /clock */
 
@@ -15665,6 +15667,23 @@
 #define DT_N_S_soc_S_spi_3ff64000_P_use_iomux_EXISTS 1
 #define DT_N_S_soc_S_spi_3ff64000_P_line_idle_low 0
 #define DT_N_S_soc_S_spi_3ff64000_P_line_idle_low_EXISTS 1
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_EXISTS 1
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_PH DT_N_S_soc_S_gpio_S_gpio_3ff44000
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_VAL_pin 15
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_VAL_pin_EXISTS 1
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_VAL_flags 1
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_VAL_flags_EXISTS 1
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_FOREACH_CELL(fn) fn(DT_N_S_soc_S_spi_3ff64000, cs_gpios, 0, pin) \
+	fn(DT_N_S_soc_S_spi_3ff64000, cs_gpios, 0, flags)
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_FOREACH_CELL_SEP(fn, sep) fn(DT_N_S_soc_S_spi_3ff64000, cs_gpios, 0, pin) DT_DEBRACKET_INTERNAL sep \
+	fn(DT_N_S_soc_S_spi_3ff64000, cs_gpios, 0, flags)
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_IDX_0_NUM_CELLS 2
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_spi_3ff64000, cs_gpios, 0)
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_FOREACH_PROP_ELEM_SEP(fn, sep) fn(DT_N_S_soc_S_spi_3ff64000, cs_gpios, 0)
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_3ff64000, cs_gpios, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_FOREACH_PROP_ELEM_SEP_VARGS(fn, sep, ...) fn(DT_N_S_soc_S_spi_3ff64000, cs_gpios, 0, __VA_ARGS__)
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_LEN 1
+#define DT_N_S_soc_S_spi_3ff64000_P_cs_gpios_EXISTS 1
 #define DT_N_S_soc_S_spi_3ff64000_P_status "okay"
 #define DT_N_S_soc_S_spi_3ff64000_P_status_STRING_UNQUOTED okay
 #define DT_N_S_soc_S_spi_3ff64000_P_status_STRING_TOKEN okay

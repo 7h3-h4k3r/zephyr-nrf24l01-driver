@@ -538,15 +538,16 @@
 			#address-cells = < 0x1 >;           /* in ../nrf24l01/app.overlay:17 */
 			#size-cells = < 0x0 >;              /* in ../nrf24l01/app.overlay:18 */
 			status = "okay";                    /* in ../nrf24l01/app.overlay:19 */
-			pinctrl-0 = < &nrf_default >;       /* in ../nrf24l01/app.overlay:20 */
-			pinctrl-names = "default";          /* in ../nrf24l01/app.overlay:21 */
+			cs-gpios = < &gpio0 0xf 0x1 >;      /* in ../nrf24l01/app.overlay:20 */
+			pinctrl-0 = < &nrf_default >;       /* in ../nrf24l01/app.overlay:21 */
+			pinctrl-names = "default";          /* in ../nrf24l01/app.overlay:22 */
 
-			/* node '/soc/spi@3ff64000/nrf24l01@0' defined in ../nrf24l01/app.overlay:23 */
+			/* node '/soc/spi@3ff64000/nrf24l01@0' defined in ../nrf24l01/app.overlay:24 */
 			nrf24l01: nrf24l01@0 {
-				compatible = "ziq,nrf24l01";         /* in ../nrf24l01/app.overlay:24 */
-				reg = < 0x0 >;                       /* in ../nrf24l01/app.overlay:25 */
-				spi-max-frequency = < 0xf4240 >;     /* in ../nrf24l01/app.overlay:26 */
-				chip-en-gpios = < &gpio0 0x10 0x1 >; /* in ../nrf24l01/app.overlay:27 */
+				compatible = "ziq,nrf24l01";         /* in ../nrf24l01/app.overlay:25 */
+				reg = < 0x0 >;                       /* in ../nrf24l01/app.overlay:26 */
+				spi-max-frequency = < 0xf4240 >;     /* in ../nrf24l01/app.overlay:27 */
+				chip-en-gpios = < &gpio0 0x10 0x1 >; /* in ../nrf24l01/app.overlay:28 */
 			};
 		};
 
@@ -936,7 +937,7 @@
 
 		/* node '/pin-controller/nrf_default' defined in ../nrf24l01/app.overlay:2 */
 		nrf_default: nrf_default {
-			phandle = < 0xc >; /* in ../nrf24l01/app.overlay:20 */
+			phandle = < 0xc >; /* in ../nrf24l01/app.overlay:21 */
 
 			/* node '/pin-controller/nrf_default/group1' defined in ../nrf24l01/app.overlay:3 */
 			group1 {

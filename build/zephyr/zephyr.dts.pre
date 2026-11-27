@@ -1045,6 +1045,7 @@
     #address-cells = <1>;
     #size-cells = <0>;
     status = "okay";
+    cs-gpios = <&gpio0 15 (1 << 0)>;
     pinctrl-0 = <&nrf_default>;
     pinctrl-names = "default";
 

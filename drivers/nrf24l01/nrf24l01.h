@@ -1,7 +1,9 @@
 #ifndef NRF24L01_H_
 #define NRF24L01_H_
 
-
+#include <zephyr/device.h>
+#include <stdint.h>
+#include <errno.h>
 
 #define CONFIG 0x00
 #define EN_RXADDR 0x02
@@ -36,6 +38,24 @@
 #define FLUSH_TX 0xE1
 #define FLUSH_RX 0xE2
 #define NOP 0xFF
+
+
+
+/*NRF24L01 Configuration nrf_conf have spi and gpio */
+
+typedef struct{
+    struct spi_dt_spec spi;
+    struct gpio_dt_spec chipen;
+    struct gpio_dt_spec cs;
+}nrf_conf;
+
+
+typedef struct{
+    uint8_t status;
+    uint8_t buf;
+    uint8_t payload[32];
+    uint8_t pipe0_read_addr[5];
+}nrf_data;
 
 
 #endif

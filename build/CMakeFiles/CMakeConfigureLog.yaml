@@ -8,7 +8,7 @@ events:
       - "/workdir/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
       - "/workdir/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:146 (include)"
       - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
-      - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
       - "CMakeLists.txt:3 (find_package)"
     message: |
       The target system is: Generic - 4.4.99 - xtensa
@@ -22,7 +22,7 @@ events:
       - "/workdir/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
       - "/workdir/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:146 (include)"
       - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
-      - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
       - "CMakeLists.txt:3 (find_package)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -48,7 +48,7 @@ events:
       - "/workdir/zephyrproject/zephyr/cmake/modules/kernel.cmake:129 (project)"
       - "/workdir/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:146 (include)"
       - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
-      - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
       - "CMakeLists.txt:3 (find_package)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -73,7 +73,7 @@ events:
       - "/workdir/zephyrproject/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
       - "/workdir/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:146 (include)"
       - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
-      - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "/workdir/zephyrproject/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
       - "CMakeLists.txt:3 (find_package)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":

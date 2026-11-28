@@ -4,7 +4,7 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 project(nrf24l01)
 
-add_subdirectory(drivers/nrf24l01)
+zephyr_include_directories(drivers/nrf24l01)
 
 target_sources(app PRIVATE src/main.c)
-
+add_subdirectory(drivers/nrf24l01)

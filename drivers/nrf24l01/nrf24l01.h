@@ -1,8 +1,12 @@
 #ifndef NRF24L01_H_
 #define NRF24L01_H_
 
+#include <zephyr/kernel.h>
 #include <zephyr/device.h>
+#include <zephyr/drivers/spi.h>
+#include <zephyr/drivers/gpio.h>
 #include <stdint.h>
+#include <stddef.h>
 #include <errno.h>
 
 #define CONFIG 0x00
@@ -39,7 +43,7 @@
 #define FLUSH_RX 0xE2
 #define NOP 0xFF
 
-
+#define NRF_ADDR_LEN 5
 
 /*NRF24L01 Configuration nrf_conf have spi and gpio */
 
@@ -54,8 +58,65 @@ typedef struct{
     uint8_t status;
     uint8_t buf;
     uint8_t payload[32];
-    uint8_t pipe0_read_addr[5];
+    uint8_t pipe0_read_addr[NRF_ADDR_LEN+1];
+    uint8_t pipe_address_tx[NRF_ADDR_LEN+1];
+    uint8_t pipe_address_rx[NRF_ADDR_LEN+1];
 }nrf_data;
 
+typedef int (*nrf24_open_tx_pipe_t)(const struct device *dev);
+typedef int (*nrf24_open_rx_pipe_t)(const struct device *dev,uint8_t pipe_id);
+typedef int (*nrf24_stop_listing_t) (const struct device *dev);
+typedef int (*nrf24_send_t) (const struct device *dev, const uint8_t *buf, size_t len, uint32_t timeout_ms );
 
+
+struct nrf24l01_driver_api {
+    nrf24_open_tx_pipe_t open_tx;
+    nrf24_open_rx_pipe_t open_rx;
+    nrf24_stop_listing_t stop_li;
+    nrf24_send_t send;
+};
+
+static inline int nrf24_open_tx_pipe(const struct device *dev)
+{
+    const struct nrf24l01_driver_api *api = (const struct nrf24l01_driver_api *)dev->api;
+
+    if (api->open_tx == NULL) {
+        return -ENOSYS;
+    }
+
+    return api->open_tx(dev);
+}
+
+static inline int nrf24_open_rx_pipe(const struct device *dev, uint8_t pipe_id)
+{
+    const struct nrf24l01_driver_api *api = (const struct nrf24l01_driver_api *)dev->api;
+
+    if (api->open_rx == NULL) {
+        return -ENOSYS;
+    }
+
+    return api->open_rx(dev, pipe_id);
+}
+
+static inline int nrf24_stop_listening(const struct device *dev)
+{
+    const struct nrf24l01_driver_api *api = (const struct nrf24l01_driver_api *)dev->api;
+
+    if (api->stop_li == NULL) {
+        return -ENOSYS;
+    }
+
+    return api->stop_li(dev);
+}
+
+static inline int nrf24_send(const struct device *dev, const uint8_t *buf, size_t len, uint32_t timeout_ms)
+{
+    const struct nrf24l01_driver_api *api = (const struct nrf24l01_driver_api *)dev->api;
+
+    if (api->send == NULL) {
+        return -ENOSYS;
+    }
+
+    return api->send(dev, buf, len, timeout_ms);
+}
 #endif

@@ -6,6 +6,8 @@
 #include <zephyr/logging/log.h>
 #include "nrf24l01.h"
 
+
+
 LOG_MODULE_REGISTER(nrf,CONFIG_NRF24L01_LOG_LEVEL);
 #define NRF24L01_SPI_OP (SPI_OP_MODE_MASTER | SPI_WORD_SET(8)| SPI_TRANSFER_MSB)
 
@@ -50,7 +52,6 @@ static int reg_write(const struct device *dev , uint8_t reg ,uint8_t val)
 {
     const nrf_conf *cfg = dev->config;
     nrf_data *data = dev->data;
-
     uint8_t tx_data[2] = { (0x20 | (reg & 0x1F)), val };
     uint8_t rx_data[2] = { 0};
 
@@ -64,6 +65,10 @@ static int reg_write(const struct device *dev , uint8_t reg ,uint8_t val)
 
     if (err < 0){
         return err;
+    }
+
+    if (data != NULL){
+        data->buf = rx_data[0];
     }
     return 0;
 }
@@ -135,7 +140,7 @@ static int set_channel(const struct device *dev)
     return 0;
 }
 
-static int flash_rx_tx(const struct device *dev,bool tx)
+static int flush_rx_tx(const struct device *dev,bool tx)
 {
     const nrf_conf *cfg = dev->config;
     uint8_t cmd = tx ? FLUSH_TX : FLUSH_RX;
@@ -150,10 +155,236 @@ static int flash_rx_tx(const struct device *dev,bool tx)
     return spi_transceive_dt(&cfg->spi,&tx_bufs,&rx_bufs);
 }
 
+static int reg_write_bytes(const struct device *dev, uint8_t reg, const uint8_t *buf, size_t len)
+{
+    const nrf_conf *cfg = dev->config;
+    uint8_t cmd = 0x20 | (reg & 0x1F);
+
+    struct spi_buf tx_bufs[] = {
+        { .buf = &cmd, .len = 1 },
+        { .buf = (void *)buf, .len = len },
+    };
+    const struct spi_buf_set tx_set = {
+        .buffers = tx_bufs,
+        .count = ARRAY_SIZE(tx_bufs),
+    };
+
+    return spi_write_dt(&cfg->spi, &tx_set);
+}
+
+static int open_tx_pipe(const struct device *dev)
+{   
+    nrf_data *data = dev->data;
+    int ret;
+
+    ret = reg_write_bytes(dev,RX_ADDR_P0,data->pipe_address_tx,NRF_ADDR_LEN);
+
+    if(ret < 0){
+        return ret;
+    }
+
+    ret = reg_write_bytes(dev,TX_ADDR,data->pipe_address_tx,NRF_ADDR_LEN);
+
+    if (ret < 0){
+        return ret;
+    }
+    
+    ret = reg_write(dev,RX_PW_P0,sizeof(data->payload));
+    return ret;
+}
+
+static int open_rx_pipe(const struct device *dev, uint8_t pipe_id )
+{
+    nrf_data *data = dev->data;
+    int ret;
+
+    if (pipe_id > 5)
+    {
+        return -EINVAL;
+    }
+
+    if (pipe_id == 0){
+        memcpy(data->pipe0_read_addr,data->pipe_address_rx,NRF_ADDR_LEN);
+        data->pipe0_read_addr[NRF_ADDR_LEN] = '\0';
+    }
+    if (pipe_id < 2){
+        reg_write_bytes(dev,RX_ADDR_P0 + pipe_id,data->pipe_address_rx,NRF_ADDR_LEN);
+    }else{
+        reg_write(dev,RX_ADDR_P0 + pipe_id, data->pipe_address_rx[0]);
+    }
+
+    reg_write(dev,RX_PW_P0 + pipe_id,sizeof(data->payload));
+    ret = reg_read(dev,EN_RXADDR);
+    if (ret < 0){
+        LOG_ERR("Open rx error");
+        return 0;
+    }
+    return reg_write(dev,EN_RXADDR,data->buf | (1 << pipe_id));
+}
+
+
+static int read_status(const struct device *dev)
+{
+    const nrf_conf *cfg = dev->config;
+    nrf_data *data = dev->data;
+    uint8_t cmd = NOP;
+
+    struct spi_buf tx_buf = { .buf = &cmd, .len = 1 };
+    struct spi_buf_set tx_set = { .buffers = &tx_buf, .count = 1 };
+
+    struct spi_buf rx_buf = { .buf = &data->buf, .len = 1 };
+    struct spi_buf_set rx_set = { .buffers = &rx_buf, .count = 1 };
+
+    return spi_transceive_dt(&cfg->spi, &tx_set, &rx_set);
+}
+
+static int send_done(const struct device *dev)
+{
+    int status = read_status(dev);
+    int ret;
+    nrf_data *data = dev->data;
+    if (!(status & (TX_DS | MAX_RT))){
+        return -1;
+    }
+    ret = reg_write(dev ,STATUS,RX_DR | TX_DS |MAX_RT);
+    uint8_t new_st = data->buf;
+    if (ret <0 ){
+        return ret;
+    }
+   
+    ret = reg_read(dev, CONFIG);
+    if (ret < 0){
+        return 0;
+    }
+    ret = reg_write(dev,CONFIG,data->buf & ~PWR_UP);
+    if (ret < 0){
+        return 0;
+    }
+    if (new_st & TX_DS ) {
+        return 1;
+    }
+    else {
+        return 2;
+    }
+}
+static int stop_listing(const struct device *dev)
+{
+    const nrf_conf *cfg = dev->config;
+    int ret;
+
+    ret = gpio_pin_set_dt(&cfg->chipen,0);
+    if (ret  < 0 ){
+        return ret;
+    }
+
+    flush_rx_tx(dev,true);
+    flush_rx_tx(dev,false);
+
+    return 0;
+}
+
+static int send_start(const struct device *dev, const uint8_t *buf, size_t len)
+{
+    const nrf_conf *cfg = dev->config;
+    nrf_data *data = dev->data;
+    const size_t max_payload = sizeof(data->payload);
+    int ret;
+
+    if (buf == NULL || len == 0 || len > max_payload) {
+        return -EINVAL;
+    }
+
+    /* 1. Power up in TX mode (PWR_UP = 1, PRIM_RX = 0) */
+    ret = reg_read(dev, CONFIG);
+    if (ret < 0) {
+        return ret;
+    }
+    ret = reg_write(dev, CONFIG, (data->buf | PWR_UP) & ~PRIM_RX);
+    if (ret < 0) {
+        return ret;
+    }
+    k_usleep(1500); /* 1.5 ms crystal oscillator startup delay */
+
+    /* 2. Prepare 32-byte payload padded with 0x00 if len < 32 */
+    uint8_t tx_payload[32] = { 0 };
+    memcpy(tx_payload, buf, len);
+
+    /* 3. Write W_TX_PAYLOAD command + padded payload in one continuous SPI transfer */
+    uint8_t cmd = W_TX_PAYLOAD;
+    struct spi_buf tx_bufs[] = {
+        { .buf = &cmd, .len = 1 },
+        { .buf = tx_payload, .len = max_payload },
+    };
+    const struct spi_buf_set tx_set = {
+        .buffers = tx_bufs,
+        .count = ARRAY_SIZE(tx_bufs),
+    };
+
+    ret = spi_write_dt(&cfg->spi, &tx_set);
+    if (ret < 0) {
+        return ret;
+    }
+
+    /* 4. Pulse CE high for >10 us to trigger transmission */
+    gpio_pin_set_dt(&cfg->chipen, 1);
+    k_busy_wait(15);
+    gpio_pin_set_dt(&cfg->chipen, 0);
+
+    return 0;
+}
+
+int send(const struct device *dev, const uint8_t *buf, size_t len, uint32_t timeout_ms)
+{
+    nrf_data *data = dev->data;
+    int ret;
+
+    /* 1. Start transmission */
+    ret = send_start(dev, buf, len);
+    if (ret < 0) {
+        return ret;
+    }
+
+    /* 2. Poll send_done() until finished or timeout */
+    int64_t start = k_uptime_get();
+    int result = -1; // -1 == not finished (Python's None)
+
+    while (result == -1 && (k_uptime_get() - start) < timeout_ms) {
+        result = send_done(dev); // 1 == success, 2 == fail, -1 == busy
+        if (result == -1) {
+            k_usleep(100); 
+        }
+    }
+
+   
+    if (result == -1) {
+        flush_rx_tx(dev, true); // true = FLUSH_TX
+        ret = reg_read(dev, CONFIG);
+        if (ret == 0) {
+            reg_write(dev, CONFIG, data->buf & ~PWR_UP);
+        }
+        return -ETIMEDOUT;
+    }
+
+    
+    if (result == 2) {
+        return -EIO;
+    }
+
+    return 0;
+}
+
 
 static int nrf24l01_INIT(const struct device *dev){
     const nrf_conf *cfg = dev->config;
     nrf_data *data = dev->data;
+    const uint8_t default_address_tx[NRF_ADDR_LEN] ={0xE7 ,0xE7,0xE7,0xE7,0xE7};
+    
+    memcpy(data->pipe_address_tx,default_address_tx,NRF_ADDR_LEN);
+    data->pipe_address_tx[NRF_ADDR_LEN] = '\0';
+
+    const uint8_t default_address_rx[NRF_ADDR_LEN] = {0xD2,0xF0,0xF0,0xF0,0xF0};
+    memcpy(data->pipe_address_rx,default_address_rx,NRF_ADDR_LEN);
+    data->pipe_address_rx[NRF_ADDR_LEN] = '\0';
 
     int ret;
 
@@ -238,8 +469,8 @@ static int nrf24l01_INIT(const struct device *dev){
         return -1;
     }
     LOG_INF("set channel done");
-    flash_rx_tx(dev,false);
-    flash_rx_tx(dev,true);
+    flush_rx_tx(dev,false);
+    flush_rx_tx(dev,true);
     LOG_INF("Flush Buffers Done");
 
     
@@ -247,7 +478,12 @@ static int nrf24l01_INIT(const struct device *dev){
     return 0;
 }
 
-
+static const struct nrf24l01_driver_api nrf24l01_api ={
+    .open_tx = open_tx_pipe,
+    .open_rx = open_rx_pipe,
+    .stop_li = stop_listing,
+    .send = send,
+};
 #define NRF24L01_DEFINE(inst)                                                \
 	static nrf_data nrf_data_##inst;                     \
 	static const nrf_conf nrf_conf_##inst = {        \
@@ -261,6 +497,6 @@ static int nrf24l01_INIT(const struct device *dev){
 			      &nrf_conf_##inst,                       \
 			      POST_KERNEL,                                  \
 			      CONFIG_NRF24L01_INIT_PRIORITY,             \
-			      NULL);
+			      &nrf24l01_api);
 
 DT_INST_FOREACH_STATUS_OKAY(NRF24L01_DEFINE)
